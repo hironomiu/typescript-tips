@@ -1,7 +1,7 @@
-import { moduleA } from './modules/moduleA'
-import { moduleB } from './modules/moduleB'
-import { moduleC } from './modules/moduleC'
-import { moduleD } from './modules/moduleD'
+import { moduleA } from './ts/modules/moduleA'
+import { moduleB } from './ts/modules/moduleB'
+import { moduleC } from './ts/modules/moduleC'
+import { moduleD } from './ts/modules/moduleD'
 
 moduleA()
 moduleB()

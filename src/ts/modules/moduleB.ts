@@ -1,4 +1,4 @@
-import { Expect, Equal, Equal2 } from '../types'
+import { Expect, Equal, Equal2 } from '..'
 
 type CASES = [
   Expect<Equal<true, true>>,
