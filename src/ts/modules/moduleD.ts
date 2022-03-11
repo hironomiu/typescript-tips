@@ -25,7 +25,7 @@ const map3: MAP3 = (array, fn) => {
 }
 
 export const moduleD = () => {
-  console.log(`---------- moduleDstart ----------`)
+  console.log(`---------- moduleD start ----------`)
 
   console.log(map([1, 2, 3, 4], (item) => item * 2))
   // @ts-expect-error
