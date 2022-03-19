@@ -94,10 +94,21 @@ type Task = {
 }
 
 type TaskPreview = Pick<Task, 'title' | 'completed'>
-
 const preview: TaskPreview = {
   title: 'title',
   completed: true,
+}
+
+type TaskPreview2 = Pick<Task, 'title' | 'description'>
+const preview2: TaskPreview2 = {
+  title: 'title2',
+  description: 'description2',
+}
+
+// Omit<Type,Keys>
+
+type Todo2 = {
+  title: string
 }
 
 export const moduleF = () => {
@@ -112,7 +123,7 @@ export const moduleF = () => {
   console.log(user2)
   console.log(todo)
   console.log(cats)
-
   console.log(preview)
+  console.log(preview2)
   console.log('---------- moduleF end ----------')
 }
