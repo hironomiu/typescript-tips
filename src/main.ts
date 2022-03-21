@@ -5,6 +5,7 @@ import { moduleD } from './ts/modules/moduleD'
 import { moduleE } from './ts/modules/moduleE'
 import { moduleF } from './ts/modules/moduleF'
 import { moduleG } from './ts/modules/moduleG'
+import { moduleH } from './ts/modules/moduleH'
 
 console.log('========== typescript-tips ==========')
 moduleA()
@@ -14,4 +15,5 @@ moduleD()
 moduleE()
 moduleF()
 moduleG()
+moduleH()
 console.log('========== typescript-tips ==========')
