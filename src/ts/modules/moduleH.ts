@@ -29,6 +29,25 @@ const result = someFunc<boolean>(true)
 const result2 = someFunc('true')
 const result3 = someFunc2<string, boolean>('true')
 const result4 = someFunc2<number, number>(10)
+
+type StringOrNot<T> = T extends string ? string : never
+
+type AUnion = string | boolean | never
+
+// type Exclude<T, U> = T extends U ? never : T;
+type ResultType = Exclude<'a' | 'b' | 'c', 'a' | 'b'>
+/*
+'a' extends 'a' | 'b' ? never : 'a' => never
+'b' extends 'a' | 'b' ? never : 'b' => never
+'c' extends 'a' | 'b' ? never : 'c' => 'c'
+*/
+
+const result5: ResultType = 'c'
+// @ts-expect-error
+const result6: ResultType = 'a'
+
+type MyType<T> = T extends string | number ? T : never
+type MyResult = MyType<string | number | boolean>
 export const moduleH = () => {
   console.log(`---------- moduleH start Conditional Type ----------`)
 
@@ -37,5 +56,7 @@ export const moduleH = () => {
   console.log(result2('TYPE B'))
   console.log(result3('TYPE A'))
   console.log(result4('TYPE B'))
+  console.log(result5)
+  console.log(result6)
   console.log(`---------- moduleG end   ----------`)
 }

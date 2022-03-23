@@ -2,6 +2,9 @@ const fill = (length: number, value: string) => {
   return Array.from({ length }, () => value)
 }
 
+const fill2 = (value: string, length: number) =>
+  Array.from({ length }, () => value)
+
 const concat = (...args: string[]) => {
   return args.reduce((a, c) => (a += c), '')
 }
@@ -17,6 +20,8 @@ export const moduleA = () => {
   console.log(call(fill, 10, 'a'))
   console.log(call(concat, 'a', 'b', 'c'))
 
+  console.log(fill2('b', 10))
+  console.log(call(fill2, 'b', 10))
   console.log(`---------- @ts-expect-error   ----------`)
   // @ts-expect-error
   console.log(call(fill, 10, 5))
