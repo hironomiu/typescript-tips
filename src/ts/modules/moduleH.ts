@@ -48,6 +48,9 @@ const result6: ResultType = 'a'
 
 type MyType<T> = T extends string | number ? T : never
 type MyResult = MyType<string | number | boolean>
+
+// @ts-expect-error
+const myResult: MyResult = true
 export const moduleH = () => {
   console.log(`---------- moduleH start Conditional Type ----------`)
 
@@ -58,5 +61,6 @@ export const moduleH = () => {
   console.log(result4('TYPE B'))
   console.log(result5)
   console.log(result6)
+  console.log(myResult)
   console.log(`---------- moduleG end   ----------`)
 }
