@@ -16,10 +16,11 @@ const seconds: Seconds = '00'
 const time: Time = '23:59:00'
 
 export const templateLiteralTypes = () => {
-  console.log('template literal types')
+  console.log('---------- template literal types start ----------')
   console.log(h1, h2)
   console.log(hour)
   console.log(minutes)
   console.log(seconds)
   console.log(time)
+  console.log('---------- template literal types end ----------')
 }
