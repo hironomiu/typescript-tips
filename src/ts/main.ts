@@ -9,6 +9,7 @@ import { moduleG } from './modules/moduleG'
 import { moduleH } from './modules/moduleH'
 import { moduleI } from './modules/moduleI'
 import { binarySearch } from './modules/binarySearch'
+import { templateLiteralTypes } from './modules/templateLiteralTypes'
 
 console.log('========== typescript-tips ==========')
 moduleA()
@@ -22,4 +23,5 @@ moduleG()
 moduleH()
 moduleI()
 console.log(binarySearch([1, 2, 3, 4, 5], 3))
+templateLiteralTypes()
 console.log('========== typescript-tips ==========')
