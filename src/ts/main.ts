@@ -23,8 +23,13 @@ moduleF()
 moduleG()
 moduleH()
 moduleI()
+console.log('---------- binarySearch start ----------')
 console.log(binarySearch([1, 2, 3, 4, 5], 3))
+console.log('---------- binarySearch end ----------')
+
 templateLiteralTypes()
+
+console.log('---------- reduceImitation start ----------')
 console.log(reduceImitation([1, 2, 3, 4], (accu, curr) => (accu += curr), 0))
 console.log(
   reduceImitation(
@@ -36,4 +41,6 @@ console.log(
     [] as string[]
   )
 )
+console.log('---------- reduceImitation end ----------')
+
 console.log('========== typescript-tips ==========')
