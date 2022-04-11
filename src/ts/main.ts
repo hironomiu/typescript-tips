@@ -10,6 +10,7 @@ import { moduleH } from './modules/moduleH'
 import { moduleI } from './modules/moduleI'
 import { binarySearch } from './modules/binarySearch'
 import { templateLiteralTypes } from './modules/templateLiteralTypes'
+import { reduceImitation } from './modules/reduceImitation'
 
 console.log('========== typescript-tips ==========')
 moduleA()
@@ -24,4 +25,5 @@ moduleH()
 moduleI()
 console.log(binarySearch([1, 2, 3, 4, 5], 3))
 templateLiteralTypes()
+console.log(reduceImitation([1, 2, 3, 4], (accu, curr) => (accu += curr), 0))
 console.log('========== typescript-tips ==========')
