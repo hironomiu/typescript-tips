@@ -33,9 +33,16 @@ console.log('---------- reduceImitation start ----------')
 console.log(reduceImitation([1, 2, 3, 4], (accu, curr) => (accu += curr), 0))
 console.log(
   reduceImitation(
+    [1, 2, 3, 4, 5, 6, 7, 8, 9],
+    (accu, curr) => (accu += curr),
+    0
+  )
+)
+console.log(
+  reduceImitation(
     ['a', 'b', 'c'],
     (accu, curr, index) => {
-      accu[index] = curr + curr
+      accu[index] = '<tag>' + curr + '</tag>'
       return accu
     },
     [] as string[]
