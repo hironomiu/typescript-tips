@@ -26,4 +26,14 @@ moduleI()
 console.log(binarySearch([1, 2, 3, 4, 5], 3))
 templateLiteralTypes()
 console.log(reduceImitation([1, 2, 3, 4], (accu, curr) => (accu += curr), 0))
+console.log(
+  reduceImitation(
+    ['a', 'b', 'c'],
+    (accu, curr, index) => {
+      accu[index] = curr + curr
+      return accu
+    },
+    [] as string[]
+  )
+)
 console.log('========== typescript-tips ==========')
