@@ -11,6 +11,7 @@ import { moduleI } from './modules/moduleI'
 import { binarySearch } from './modules/binarySearch'
 import { templateLiteralTypes } from './modules/templateLiteralTypes'
 import { reduceImitation } from './modules/reduceImitation'
+import { typeAssertion } from './modules/typeAssertion'
 
 console.log('========== typescript-tips ==========')
 moduleA()
@@ -50,4 +51,7 @@ console.log(
 )
 console.log('---------- reduceImitation end ----------')
 
+console.log('---------- typeAssertion start ----------')
+typeAssertion()
+console.log('---------- typeAssertion end ----------')
 console.log('========== typescript-tips ==========')
