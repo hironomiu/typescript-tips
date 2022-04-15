@@ -12,6 +12,7 @@ import { binarySearch } from './modules/binarySearch'
 import { templateLiteralTypes } from './modules/templateLiteralTypes'
 import { reduceImitation } from './modules/reduceImitation'
 import { typeAssertion } from './modules/typeAssertion'
+import { overloadFunction } from './modules/overloadFunction'
 
 console.log('========== typescript-tips ==========')
 moduleA()
@@ -54,4 +55,8 @@ console.log('---------- reduceImitation end ----------')
 console.log('---------- typeAssertion start ----------')
 typeAssertion()
 console.log('---------- typeAssertion end ----------')
+console.log('---------- overloadFunction start ----------')
+console.log(overloadFunction([1, 2, 3]))
+console.log(overloadFunction(['a', 'b', 'c']))
+console.log('---------- overloadFunction end ----------')
 console.log('========== typescript-tips ==========')
