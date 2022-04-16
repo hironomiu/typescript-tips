@@ -13,6 +13,7 @@ import { templateLiteralTypes } from './modules/templateLiteralTypes'
 import { reduceImitation } from './modules/reduceImitation'
 import { typeAssertion } from './modules/typeAssertion'
 import { overloadFunction } from './modules/overloadFunction'
+import { nullishCoalescing } from './modules/nullishCoalescing'
 
 console.log('========== typescript-tips ==========')
 moduleA()
@@ -61,4 +62,7 @@ console.log(overloadFunctionRet1)
 const overloadFunctionRet2 = overloadFunction(['a', 'b', 'c'])
 console.log(overloadFunctionRet2)
 console.log('---------- overloadFunction end ----------')
+console.log('---------- nullishCoalescing start ----------')
+nullishCoalescing()
+console.log('---------- nullishCoalescing end ----------')
 console.log('========== typescript-tips ==========')
