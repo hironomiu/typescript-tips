@@ -14,6 +14,7 @@ import { reduceImitation } from './modules/reduceImitation'
 import { typeAssertion } from './modules/typeAssertion'
 import { overloadFunction } from './modules/overloadFunction'
 import { nullishCoalescing } from './modules/nullishCoalescing'
+import { valuesOf } from './modules/valuesOf'
 
 console.log('========== typescript-tips ==========')
 moduleA()
@@ -65,4 +66,7 @@ console.log('---------- overloadFunction end ----------')
 console.log('---------- nullishCoalescing start ----------')
 nullishCoalescing()
 console.log('---------- nullishCoalescing end ----------')
+console.log('---------- valuesOf start ----------')
+valuesOf()
+console.log('---------- valuesOf end ----------')
 console.log('========== typescript-tips ==========')
