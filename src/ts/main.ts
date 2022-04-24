@@ -15,6 +15,7 @@ import { typeAssertion } from './modules/typeAssertion'
 import { overloadFunction } from './modules/overloadFunction'
 import { nullishCoalescing } from './modules/nullishCoalescing'
 import { valuesOf } from './modules/valuesOf'
+import { parameters } from './modules/parameters'
 
 console.log('========== typescript-tips ==========')
 moduleA()
@@ -69,4 +70,7 @@ console.log('---------- nullishCoalescing end ----------')
 console.log('---------- valuesOf start ----------')
 valuesOf()
 console.log('---------- valuesOf end ----------')
+console.log('---------- parameters start ----------')
+parameters()
+console.log('---------- parameters end ----------')
 console.log('========== typescript-tips ==========')
