@@ -48,4 +48,7 @@ export const nullishCoalescing = () => {
   data2.root = 0
   console.log(data2.root ?? 'root is null or undefined')
   console.log(data2.root || 'root is null or undefined')
+  data2.root = ''
+  console.log(data2.root ?? 'root is null or undefined')
+  console.log(data2.root || 'root is null or undefined')
 }
