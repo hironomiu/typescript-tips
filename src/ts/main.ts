@@ -16,6 +16,7 @@ import { overloadFunction } from './modules/overloadFunction'
 import { nullishCoalescing } from './modules/nullishCoalescing'
 import { valuesOf } from './modules/valuesOf'
 import { parameters } from './modules/parameters'
+import { rest } from './modules/rest'
 
 console.log('========== typescript-tips ==========')
 moduleA()
@@ -73,4 +74,7 @@ console.log('---------- valuesOf end ----------')
 console.log('---------- parameters start ----------')
 parameters()
 console.log('---------- parameters end ----------')
+console.log('---------- rest start ----------')
+rest()
+console.log('---------- rest end ----------')
 console.log('========== typescript-tips ==========')
