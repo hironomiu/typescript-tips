@@ -17,6 +17,7 @@ import { nullishCoalescing } from './modules/nullishCoalescing'
 import { valuesOf } from './modules/valuesOf'
 import { parameters } from './modules/parameters'
 import { rest } from './modules/rest'
+import { fizzBuzzEventEmitter } from './modules/fizzBuzzEventEmitter'
 
 console.log('========== typescript-tips ==========')
 moduleA()
@@ -77,4 +78,6 @@ console.log('---------- parameters end ----------')
 console.log('---------- rest start ----------')
 rest()
 console.log('---------- rest end ----------')
+// fizzBuzzEventEmitter
+fizzBuzzEventEmitter()
 console.log('========== typescript-tips ==========')
