@@ -18,6 +18,7 @@ import { valuesOf } from './modules/valuesOf'
 import { parameters } from './modules/parameters'
 import { rest } from './modules/rest'
 import { fizzBuzzEventEmitter } from './modules/fizzBuzzEventEmitter'
+import { FizzBuzzClassEventEmitter } from './modules/fizzBuzzClassEventEmitter'
 
 console.log('========== typescript-tips ==========')
 moduleA()
@@ -80,4 +81,9 @@ rest()
 console.log('---------- rest end ----------')
 // fizzBuzzEventEmitter
 fizzBuzzEventEmitter()
+//
+const fizzBuzzClassEventEmitter = new FizzBuzzClassEventEmitter(40)
+fizzBuzzClassEventEmitter.emitOn()
+process.nextTick(() => fizzBuzzClassEventEmitter.start())
+process.nextTick(() => fizzBuzzClassEventEmitter.end())
 console.log('========== typescript-tips ==========')
