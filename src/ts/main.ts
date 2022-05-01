@@ -81,9 +81,9 @@ rest()
 console.log('---------- rest end ----------')
 // fizzBuzzEventEmitter
 fizzBuzzEventEmitter()
-//
+// fizzBuzzClassEventEmitter
 const fizzBuzzClassEventEmitter = new FizzBuzzClassEventEmitter(40)
-fizzBuzzClassEventEmitter.emitOn()
 process.nextTick(() => fizzBuzzClassEventEmitter.start())
+fizzBuzzClassEventEmitter.emitOn()
 process.nextTick(() => fizzBuzzClassEventEmitter.end())
 console.log('========== typescript-tips ==========')

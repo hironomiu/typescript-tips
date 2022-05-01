@@ -24,12 +24,16 @@ export class FizzBuzzClassEventEmitter extends EventEmitter {
     this.emit('end')
   }
   emitOn() {
-    this.on('start', () => console.log('start'))
+    this.on('start', this.startListener)
       .on('FizzBuzz', this.fizzBuzzListener)
       .on('Fizz', this.fizzListener)
       .on('Buzz', this.buzzListener)
       .on('other', this.otherListener)
-      .on('end', () => console.log('end'))
+      .on('end', this.endListener)
+  }
+  startListener() {
+    console.log('---------- fizzBuzzClassEventEmitter start ----------')
+    console.log('start')
   }
   fizzBuzzListener() {
     console.log('FizzBuzz')
@@ -42,6 +46,10 @@ export class FizzBuzzClassEventEmitter extends EventEmitter {
   }
   otherListener(count: number) {
     console.log(count)
+  }
+  endListener() {
+    console.log('end')
+    console.log('---------- fizzBuzzClassEventEmitter end ----------')
   }
   end() {
     this.off('start', () => console.log('start'))
