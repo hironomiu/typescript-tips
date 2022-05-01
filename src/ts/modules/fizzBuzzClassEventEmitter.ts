@@ -31,23 +31,23 @@ export class FizzBuzzClassEventEmitter extends EventEmitter {
       .on('other', this.otherListener)
       .on('end', this.endListener)
   }
-  startListener() {
+  private startListener() {
     console.log('---------- fizzBuzzClassEventEmitter start ----------')
     console.log('start')
   }
-  fizzBuzzListener() {
+  private fizzBuzzListener() {
     console.log('FizzBuzz')
   }
-  fizzListener() {
+  private fizzListener() {
     console.log('Fizz')
   }
-  buzzListener() {
+  private buzzListener() {
     console.log('Buzz')
   }
-  otherListener(count: number) {
+  private otherListener(count: number) {
     console.log(count)
   }
-  endListener() {
+  private endListener() {
     console.log('end')
     console.log('---------- fizzBuzzClassEventEmitter end ----------')
   }
