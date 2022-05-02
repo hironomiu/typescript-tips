@@ -19,6 +19,7 @@ import { parameters } from './modules/parameters'
 import { rest } from './modules/rest'
 import { fizzBuzzEventEmitter } from './modules/fizzBuzzEventEmitter'
 import { FizzBuzzClassEventEmitter } from './modules/fizzBuzzClassEventEmitter'
+import { dateCheck } from './modules/dateCheck'
 
 console.log('========== typescript-tips ==========')
 moduleA()
@@ -86,4 +87,7 @@ const fizzBuzzClassEventEmitter = new FizzBuzzClassEventEmitter(40)
 process.nextTick(() => fizzBuzzClassEventEmitter.start())
 fizzBuzzClassEventEmitter.emitOn()
 process.nextTick(() => fizzBuzzClassEventEmitter.end())
+console.log('---------- dateCheck start ----------')
+dateCheck()
+console.log('---------- dateCheck end ----------')
 console.log('========== typescript-tips ==========')
