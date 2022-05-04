@@ -12,8 +12,14 @@ export const dateCheck = () => {
 
   console.log(Date())
   console.log(Date)
-
+  if (!Number.isNaN(date.getTime()) && date <= new Date()) {
+    console.log(date)
+  }
   date = new Date('hoge')
   console.log(date)
-  console.log(Number.isNaN(date.getTime()))
+  console.log('true or false:', Number.isNaN(date.getTime()))
+
+  if (Number.isNaN(date.getTime())) {
+    console.log(date)
+  }
 }
