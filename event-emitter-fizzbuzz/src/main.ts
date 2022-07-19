@@ -1,4 +1,3 @@
-// TODO: 切り出したのでどっかで削除する
 import { EventEmitter } from 'events'
 
 export const fizzBuzzEventEmitter = () => {
@@ -65,3 +64,5 @@ export const fizzBuzzEventEmitter = () => {
     .on('other', otherListener)
     .on('end', endListener)
 }
+
+fizzBuzzEventEmitter()
